@@ -80,16 +80,18 @@ section h3 {
   margin-top: 10px;
   padding-left: 20px;
   list-style-type: disc;
-  color: #555;
-  background-color: transparent; /* Remove background color */
-  padding: 0; /* Remove extra padding */
-  border-radius: 0; /* Remove rounded corners */
-  box-shadow: none; /* Remove shadow */
+  color: #444; /* Slightly darker text for better readability */
+  background-color: #f0f4ff; /* Light blue background for participant section */
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  border: 1px solid #d0e2ff; /* Subtle border to define the section */
 }
 
 .activity-card ul li {
   margin-bottom: 5px;
   font-size: 14px;
+  font-weight: bold; /* Highlight participant names */
+  color: #1a237e; /* Match the header color for consistency */
 }
 
 .form-group {
