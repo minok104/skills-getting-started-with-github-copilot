@@ -8,24 +8,26 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #333; /* Original text color */
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Original soft gray background */
 }
 
 header {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
-  background-color: #1a237e;
+  background-color: #1a237e; /* Original deep blue */
   color: white;
-  border-radius: 5px;
+  border-radius: 5px; /* Revert to original rounded corners */
+  box-shadow: none; /* Remove shadow */
 }
 
-header h1 {
+header h1, header h2 {
   margin-bottom: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Playful font */
 }
 
 main {
@@ -60,18 +62,36 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* Revert to original solid border */
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Revert to original light gray background */
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #0066cc; /* Revert to original blue heading color */
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #444; /* Slightly darker text for better readability */
+  background-color: #f0f4ff; /* Light blue background for participant section */
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  border: 1px solid #d0e2ff; /* Subtle border to define the section */
+}
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold; /* Highlight participant names */
+  color: #1a237e; /* Match the header color for consistency */
 }
 
 .form-group {
@@ -94,18 +114,19 @@ section h3 {
 }
 
 button {
-  background-color: #1a237e;
+  background-color: #1a237e; /* Revert to original deep blue */
   color: white;
   border: none;
   padding: 10px 15px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 5px; /* Revert to original rounded corners */
   cursor: pointer;
   transition: background-color 0.2s;
+  font-weight: normal; /* Revert to original font weight */
 }
 
 button:hover {
-  background-color: #3949ab;
+  background-color: #3949ab; /* Revert to original hover color */
 }
 
 .message {
@@ -140,5 +161,6 @@ footer {
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  color: #666;
+  color: #666; /* Revert to original footer color */
+  font-style: normal; /* Remove italic style */
 }
